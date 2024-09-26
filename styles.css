@@ -20,14 +20,11 @@ body {
 .nav-links{
     display: flex;
     gap: 2rem;
-list-style: none;
-height:20vh;
+    list-style: none;
+    height:20vh;
  }
  nav {
     justify-content:space-around;
     align-items:center;
     height: 30vh ;
  }
-.nav-links{
-
-}
