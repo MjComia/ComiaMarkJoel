@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+ html{
+  scroll-behavior: smooth;
+ }
+ p{
+    color: rgb(204, 97, 97)
+ }
+ /*Desktop Nav */
+ nav,
+.nav-links{
+    display: flex;
+    gap: 2rem;
+list-style: none;
+height:20vh;
+ }
+ nav {
+    justify-content:space-around;
+    align-items:center;
+    height: 30vh ;
+ }
+.nav-links{
+
+}
