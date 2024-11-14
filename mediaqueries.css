@@ -17,7 +17,7 @@
   section{
     margin: 0 6%;
   }
-  section__pic-container{
+  .section__pic-container{
     width: 2755px;
     height: 275px;
     margin: 0 auto 2rem;
