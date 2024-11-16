@@ -1,0 +1,68 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+#projects h1{
+    color: rgb(219, 217, 217);
+    font-size: 30px;
+    padding-bottom: 30px;
+
+}
+
+.proj1-main-container, .proj2-main-container, .proj3-main-container{
+    display:flex;
+    flex-direction: row;
+    gap: 60px;
+    padding-bottom:100px;
+}
+/* Style for the project container */
+.proj1-container, .proj2-container, .proj3-container{
+    position: relative;
+    width: 450px; /* Adjust to your image width */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Image styling */
+.img-bank, .img-gui, .img-compre{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Link styling (initially hidden) */
+.atm-site, .gui-site, .compre-site {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for the container */
+.proj1-container:hover .img-bank , .proj2-container:hover .img-gui, .proj3-container:hover .img-compre{
+    transform: scale(1.1); /* Zoom in effect */
+}
+
+.proj1-container:hover .atm-site, .proj2-container:hover .gui-site, .proj3-container:hover .compre-site {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+.description1-container, .description2-container, .description3-container{
+    color: rgb(219, 217, 217);
+    width:600px;
+}

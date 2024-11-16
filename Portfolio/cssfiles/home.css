@@ -1,0 +1,35 @@
+.home-body-container{
+    display: flex;
+    padding-top: 80px;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.home-body{
+display:flex;
+flex-direction: column;
+gap: 10px;
+border: solid 1px rgb(87, 87, 87);
+padding: 30px;
+margin: 20px;
+width: 700px;
+box-shadow: 0px 1px 8px 5px rgba(80, 80, 80, 0.2);
+border-radius: 15px;
+margin-bottom: 0px;
+}
+.profile1{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 15px;
+    font-size: 25px;
+    color: rgb(219, 217, 217)
+}
+.profile2{
+    color: rgb(219, 217, 217)
+}
+
+.imgMe{
+    width:250px;
+    border-radius: 125px;
+}
