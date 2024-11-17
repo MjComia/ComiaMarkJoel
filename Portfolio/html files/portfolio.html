@@ -2,12 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <title>MJ's Portfolio</title>
     <link rel="stylesheet" href="/Portfolio/cssfiles/nav.css" />
     <link rel="stylesheet" href="/Portfolio/cssfiles/general.css" />
     <link rel="stylesheet" href="/Portfolio/cssfiles/home.css" />
     <link rel="stylesheet" href="/Portfolio/cssfiles/skills.css" />
     <link rel="stylesheet" href="/Portfolio/cssfiles/projects.css" />
     <link rel="stylesheet" href="/Portfolio/cssfiles/contacts.css" />
+    <link rel="stylesheet" href="/Portfolio/cssfiles/mediaQ.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -18,16 +21,23 @@
   </head>
   <body>
     <nav class="nav-bar">
-      <div class="nav-bar-container">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+    
+      <!-- Navigation Links -->
+      <ul class="nav-bar-container">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+
     <section id="home" class="home-body-container">
       <div class="home-body">
         <div class="profile1">
@@ -104,12 +114,12 @@
     <div class = "proj1-main-container">
         <div class = "proj1-container">
         <img src="/Portfolio/pictures/bank.jpg" class = "img-bank">
-        <a href = "https://github.com/MjComia/Projects/tree/main/ATM%20simulation" class = "atm-site">Visit project</a>
+        <a href = "https://github.com/MjComia/Projects/tree/main/ATM%20simulation" target = "_blank" class = "atm-site">Visit project</a>
 
         </div>
         
         <div class = "description1-container">
-            <h1>ATM simulation</h1>
+            <h1 class = "proj-title">ATM simulation</h1>
             <p>The project that I did simulate how a usual atm machine work. In this project, a flash
                 drive acts as a atm card of the user. This project is mainly programmed in C++ language.
             </p>
@@ -119,7 +129,7 @@
     <div class = "proj2-main-container">
 
         <div class = "description2-container">
-            <h1>Teacher and Student Portal</h1>
+            <h1 class = "proj-title">Teacher and Student Portal</h1>
             <p>The project as a portal for both student and teacher. The teacher can input and edit the grades
                 while the students can only view their grades in the portal. I used Java and MySql in this project.
             </p>
@@ -127,19 +137,19 @@
 
         <div class = "proj2-container">
         <img src="/Portfolio/pictures/gui.jpg" class = "img-gui">
-        <a href = "https://github.com/MjComia/Projects/tree/main/gui%20in%20Java" class = "gui-site">Visit project</a>
+        <a href = "https://github.com/MjComia/Projects/tree/main/gui%20in%20Java"target = "_blank" class = "gui-site">Visit project</a>
         </div>
     </div>
     <!--Project 3-->
     <div class = "proj3-main-container">
         <div class = "proj3-container">
         <img src="/Portfolio/pictures/compress.jpg" class = "img-compre">
-        <a href = "https://github.com/MjComia/Projects/tree/main/Compression%20and%20Decompression%20using%20Huffman%20Tree" class = "compre-site">Visit project</a>
+        <a href = "https://github.com/MjComia/Projects/tree/main/Compression%20and%20Decompression%20using%20Huffman%20Tree" target = "_blank"class = "compre-site">Visit project</a>
 
         </div>
         
         <div class = "description3-container">
-            <h1>Compression and Decompression</h1>
+            <h1 class = "proj-title">Compression and Decompression</h1>
             <p>The project's purpose is to compress a file and decompress it. The project's algorithm that 
                 was used is binary tree and the project is done in complete C++.
             </p>
@@ -156,10 +166,26 @@
         </div>
         
         <div>
-            <button class="email-button"><i class="fas fa-envelope"></i>Send me an email</button>
+            <a href="mailto:comiamarkjoel@gmail.com" class="email-button"><i class="fas fa-envelope"></i>Send me an email</a>
+        </div>
+        <div class = "socials">
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.facebook.com/your-profile" target="_blank" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://github.com/your-profile" target="_blank" class="github">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
         </div>
     </section>
+    <div class="footer-last"> 
+      <div class="foot"> Copyright © 2024 Mark Joel Comia. All Rights Reserved.</div>
+    </div>
+    
     <script src ="/Portfolio/JS/typing-ani.js"></script>
+    <script src ="/Portfolio/JS/mediaQ.js"></script>
   </body>
 </html>

@@ -1,11 +1,11 @@
 #contact{
     display:flex;
     flex-direction:column;
-    align-items: center;
-    justify-content: center;
+  
+    height:750px;
 }
 #contact h1{
-    font-size:30px;
+    font-size:50px;
     color: rgb(219, 217, 217)
 }
 .contacts-desc{
@@ -31,4 +31,61 @@
     display:flex;
     flex-direction:column;
     align-items: center;
+}
+.email-button{
+    display:inline-flex;
+    align-items: center;
+    gap:10px;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF; /* Blue background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    border: 1px solid #007BFF;
+}
+.email-button i{
+    font-size:20px;
+}
+.email-button:hover{
+    background-color: #212121;/* Change background to white */
+    color: #007BFF; 
+    border: 1px solid #007BFF; /* Add a border */
+}
+.socials{
+    display:flex;
+    gap:15px;
+    justify-content: center;
+    margin:20px;
+}
+.socials a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+    background-color: #333;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.socials a:hover{
+    background-color: white;
+    color: #333;
+  
+}
+.footer-last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.foot{
+    color:rgb(219, 217, 217);
 }

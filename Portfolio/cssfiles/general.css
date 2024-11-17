@@ -1,6 +1,5 @@
 body{
     background-color: #212121;
-    height:5000px;
     font-family: "Inter", sans-serif;
     font-weight:400;
 }
@@ -63,3 +62,7 @@ body{
         opacity: 0;
     }
 }
+
+html{
+    scroll-behavior: smooth;
+   }

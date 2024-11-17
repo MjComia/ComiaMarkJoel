@@ -6,11 +6,14 @@
     padding-top: 50px;
 
 }
-#projects h1{
+h1{
     color: rgb(219, 217, 217);
-    font-size: 30px;
+    font-size: 50px;
     padding-bottom: 30px;
 
+}
+.proj-title{
+    font-size:30px;
 }
 
 .proj1-main-container, .proj2-main-container, .proj3-main-container{

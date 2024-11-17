@@ -2,7 +2,7 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding-top:150px;
+    padding-top:100px;
 }
 .skills-body{
     display:flex;
@@ -31,8 +31,9 @@
 }
 .h1-skills{
     color: rgb(219, 217, 217);
-    font-size: 30px;
+    font-size: 50px;
 }
+
 .title, .description{
     color: rgb(219, 217, 217);
 }
