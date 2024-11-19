@@ -4,41 +4,49 @@
     align-items: center;
     justify-content: center;
     padding-top: 50px;
-
 }
-h1{
+
+.project-container {
+    padding: 30px;
+    margin: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
     color: rgb(219, 217, 217);
     font-size: 50px;
     padding-bottom: 30px;
-
-}
-.proj-title{
-    font-size:30px;
 }
 
-.proj1-main-container, .proj2-main-container, .proj3-main-container{
-    display:flex;
+.proj-title {
+    font-size: 30px;
+}
+
+.proj1-main-container, .proj2-main-container, .proj3-main-container {
+    display: flex;
     flex-direction: row;
     gap: 60px;
-    padding-bottom:100px;
+    padding-bottom: 100px;
+    flex: 1;
 }
-/* Style for the project container */
-.proj1-container, .proj2-container, .proj3-container{
+
+.proj1-container, .proj2-container, .proj3-container {
     position: relative;
-    width: 450px; /* Adjust to your image width */
+    width: 450px;
     overflow: hidden;
     border-radius: 10px;
 }
 
-/* Image styling */
-.img-bank, .img-gui, .img-compre{
+.img-bank, .img-gui, .img-compre {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
 
-/* Link styling (initially hidden) */
 .atm-site, .gui-site, .compre-site {
     position: absolute;
     top: 50%;
@@ -56,16 +64,43 @@ h1{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Hover effect for the container */
-.proj1-container:hover .img-bank , .proj2-container:hover .img-gui, .proj3-container:hover .img-compre{
-    transform: scale(1.1); /* Zoom in effect */
+.proj1-container:hover .img-bank,
+.proj2-container:hover .img-gui,
+.proj3-container:hover .img-compre {
+    transform: scale(1.1);
 }
 
-.proj1-container:hover .atm-site, .proj2-container:hover .gui-site, .proj3-container:hover .compre-site {
+.proj1-container:hover .atm-site,
+.proj2-container:hover .gui-site,
+.proj3-container:hover .compre-site {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
-.description1-container, .description2-container, .description3-container{
+
+.description1-container, .description2-container, .description3-container {
     color: rgb(219, 217, 217);
-    width:600px;
+    width: 90%;
+    max-width: 600px;
+    flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .proj1-main-container, .proj2-main-container, .proj3-main-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .description1-container, .description2-container, .description3-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .proj-title {
+        font-size: 24px;
+    }
 }

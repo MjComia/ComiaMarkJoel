@@ -29,6 +29,7 @@
     gap: 10px;
     justify-content: center;
 }
+
 .h1-skills{
     color: rgb(219, 217, 217);
     font-size: 50px;
@@ -118,4 +119,11 @@
 }
 .title-others{
     font-size: 24px;
+}
+.skills-body, .others{
+    width: 90%; /* Take up 90% of the container's width */
+    max-width: 600px; 
+}
+.skills-body hr, .others hr {
+    width: 80%; /* Adjust based on parent container's width */
 }

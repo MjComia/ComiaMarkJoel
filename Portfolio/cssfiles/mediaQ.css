@@ -20,15 +20,16 @@
 @media (max-width: 770px) {
     .hamburger {
         display: flex; /* Show hamburger menu on small screens */
+        position:fixed;
     }
 
     .nav-bar-container {
         display: none; /* Hide the menu initially */
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 60px;
         right: 10px;
-        width: 200px;
+        width: 100px;
         background-color: rgb(65, 65, 65);
         border-radius: 8px;
         padding: 10px;
@@ -49,4 +50,13 @@
         text-decoration: none;
         display: block;
     }
+    .proj1-main-container, .proj2-main-container,
+     .proj3-main-container{
+        flex-direction: column;
+     }
+     
+     .contacts-desc, .contacts-desc hr{
+        width: 350px;
+     }
+
 }
