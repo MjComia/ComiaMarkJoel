@@ -68,6 +68,13 @@
     border-radius: 3px;
     color:black;
 }
+.frontend-wp{
+    background-color: rgb(0, 104, 201);
+    margin: 5px;
+    padding: 3px;
+    border-radius: 3px;
+    color:black;
+}
 .lang-cpp{
     background-color: rgb(8, 115, 255);
     margin: 5px;
